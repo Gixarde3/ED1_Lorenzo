@@ -33,12 +33,16 @@ class CalculadoraNormal : AppCompatActivity() {
                 txtOperacion.text = txtOperacion.text.toString() + operacion
             }
             "+", "-", "*", "/" -> {
+                if (numeroTxt == ""){
+                    return
+                }
                 numero = numeroTxt.toDouble()
                 numeroTxt = ""
                 operacionString = operacion
                 txtOperacion.text = operacion
             }
             "=" -> {
+
                 when (operacionString) {
                     "+" -> txtOperacion.text = (numero + numeroTxt.toDouble()).toString()
                     "-" -> txtOperacion.text = (numero - numeroTxt.toDouble()).toString()

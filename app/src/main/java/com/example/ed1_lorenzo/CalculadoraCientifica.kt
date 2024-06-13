@@ -33,6 +33,9 @@ class CalculadoraCientifica : AppCompatActivity() {
                 txtOperacion.text = txtOperacion.text.toString() + operacion
             }
             "+", "-", "*", "/", "!", "^(", "^2" -> {
+                if (numeroTxt == ""){
+                    return
+                }
                 numero = numeroTxt.toDouble()
                 numeroTxt = ""
                 operacionString = operacion
