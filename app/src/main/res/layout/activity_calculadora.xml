@@ -21,18 +21,26 @@
             android:text="Calculadoras"
             android:textAlignment="center"
             android:textSize="60sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/ColorPrimary"
+            />
 
         <Button
             android:id="@+id/btnCalculadoraNormal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calculadora básica" />
+            android:text="Calculadora básica"
+            android:backgroundTint="@color/ColorOnPrimary"
+            android:textColor="@color/ColorPrimaryVariant"
+            />
 
         <Button
             android:id="@+id/btnCalculadoraCientifica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Calculadora científica" />
+            android:text="Calculadora científica"
+            android:backgroundTint="@color/ColorOnPrimary"
+            android:textColor="@color/ColorPrimaryVariant"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

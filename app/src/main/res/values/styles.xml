@@ -4,5 +4,12 @@
         <item name="android:layout_height">
             match_parent
         </item>
+        <item name="android:backgroundTint">
+            @color/ColorPrimary
+        </item>
+        <item name="android:textColor">
+            @color/white
+        </item>
     </style>
+
 </resources>
